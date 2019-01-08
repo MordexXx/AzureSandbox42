@@ -62,9 +62,6 @@
 
 // Smartphones
 @include mediaSm {
-    .bg-img {
-        background-image: none;
-    }
     main#home h1 {
         margin-top: 10vh;
     }

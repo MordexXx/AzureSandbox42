@@ -16,6 +16,7 @@ $background-opacity: 0.8;
             background: $home-image;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            background-position: center;
             background-size: cover;
 
             &:after {
@@ -45,7 +46,7 @@ $background-opacity: 0.8;
     }
 }
 @mixin mediaLg {
-    @media screen and (mid-width: 769px) and (max-width: 1170px) {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
         @content;
     }
 }

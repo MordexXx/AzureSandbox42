@@ -38,10 +38,9 @@
     height: 100vh;
     overflow: hidden; }
   .menu-nav {
-    opacity: 0.9;
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: rgba(55, 55, 55, 0.9);
     border-style: solid;
     border-width: 2px 2px 2px 1px;
     border-color: #EC6200;
@@ -51,8 +50,7 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    opacity: 0.9;
-    background: #444;
+    background: rgba(68, 68, 68, 0.9);
     border-style: solid;
     border-width: 2px 1px 2px 2px;
     border-color: #EC6200;
@@ -123,9 +121,9 @@
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
-    opacity: 0.95;
     height: 75vh;
     width: 100%;
+    background: rgba(55, 55, 55, 0.95);
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
     border-width: 0px 1px 1px 1px; }
@@ -133,6 +131,7 @@
       transform: translate3d(-300px, 0, 0); }
   .menu-branding {
     height: 25vh;
+    background: rgba(68, 68, 68, 0.95);
     border-width: 1px 1px 1px 1px;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
@@ -204,4 +203,10 @@ main {
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 20vh;
+      /*
+            &.show {
+                margin-top: 7vh;
+
+            }
+            */ }

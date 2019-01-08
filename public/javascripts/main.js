@@ -4,8 +4,10 @@ const menu = document.querySelector('.menu');
 const portrait = document.querySelector('.portrait');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
+const header1 = document.querySelector('.lg-heading');
 const navItems = document.querySelectorAll('.nav-item');
-console.log(menuBranding);
+
+
 
 // Set Initial State Of Menu
 let showMenu = false;
@@ -17,6 +19,7 @@ function toggleMenu() {
     if(!showMenu) {
         menuBtn.classList.add('close');
         menuBtn.classList.remove('blink');
+        header1.classList.add('show');
         menu.classList.add('show');
         portrait.classList.add('show');
         menuNav.classList.add('show');
@@ -29,6 +32,7 @@ function toggleMenu() {
     else {
         menuBtn.classList.remove('close');
         menuBtn.classList.add('blink');
+        header1.classList.remove('show');
         menu.classList.remove('show');
         portrait.classList.remove('show');
         menuNav.classList.remove('show');

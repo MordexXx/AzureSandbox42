@@ -32,9 +32,9 @@
     }
 
     .menu-nav {
-        opacity: 0.95;
         height: 75vh;
         width: 100%;
+        background: rgba(darken($primary-color, 5),0.95);
         transform: translate3d(-100%,0,0);
         font-size: 24px;
         border-width: 0px 1px 1px 1px;
@@ -47,6 +47,7 @@
 
     .menu-branding {
         height: 25vh;
+        background: rgba($primary-color,0.95);
         border-width: 1px 1px 1px 1px;
         transform: translate3d(100%,0,0);
 

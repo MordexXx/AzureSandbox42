@@ -5,7 +5,6 @@
     right: 35px;
     top: 35px;
     cursor: pointer;
-    
     @include easeOut;
 
     .btn-line {
@@ -63,10 +62,9 @@
     }
 
     &-nav {
-        opacity: 0.9;
         margin: 0;
         padding: 0;
-        background: darken($primary-color, 5);
+        background: rgba(darken($primary-color, 5),0.9);
         border-style: solid;
         border-width: 2px 2px 2px 1px;
         border-color: $secondary-color;
@@ -83,8 +81,7 @@
 
 
     &-branding {
-        opacity: 0.9;
-        background: $primary-color;
+        background: rgba($primary-color,0.9);
         border-style: solid;
         border-width: 2px 1px 2px 2px;
         border-color: $secondary-color;

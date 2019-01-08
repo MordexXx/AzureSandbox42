@@ -1,4 +1,4 @@
-// Menu button
+// Menu button (Top right corner)
 .menu-btn {
     position: absolute;
     z-index: 3;
@@ -15,7 +15,7 @@
         @include easeOut;
     }
 
-    // Rotate Into X With Menu Lines
+    // Rotate The Lines Into X shape
     &.close {
         transform: rotate(180deg);
 
@@ -77,9 +77,8 @@
 
         }
     }
-    // Portrait Side
 
-
+    // Portrait/Left Side
     &-branding {
         background: rgba($primary-color,0.9);
         border-style: solid;
@@ -102,8 +101,6 @@
             border: solid 3px $secondary-color;
         }
     }
-
-
     .nav-item {
         transform: translate3d(600px,0,0);
         @include easeOut;

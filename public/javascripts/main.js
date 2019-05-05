@@ -14,8 +14,9 @@ let URL=document.URL;
 console.log(URL);
 let showMenu = false;
 
-
-document.addEventListener('DOMContentLoaded', toggleMenu);
+if(URL == 'http://www.webdeveloper.fi/about') {
+    document.addEventListener('DOMContentLoaded', toggleMenu);
+}
 
 menuBtn.addEventListener('click', toggleMenu);
 

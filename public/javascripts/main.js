@@ -12,7 +12,7 @@ const navItems = document.querySelectorAll('.nav-item');
 // Set Initial State Of Menu
 let URL=document.URL;
 let showMenu = false;
-if(URL == 'http://www.webdeveloper.fi/') {
+/* if(URL == 'http://www.webdeveloper.fi/') {
     console.log(URL);
 }
 else {
@@ -26,7 +26,7 @@ else {
     navItems.forEach(item => item.classList.add('show'));
     showMenu = true;
 }
-
+*/
 
 
 
@@ -43,6 +43,7 @@ function toggleMenu() {
         portrait.classList.add('show');
         menuNav.classList.add('show');
         menuBranding.classList.add('show');
+        menuBranding.classList.remove('hide');
         navItems.forEach(item => item.classList.add('show'));
     
         //Set Menu State

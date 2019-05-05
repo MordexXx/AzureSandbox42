@@ -17,7 +17,8 @@ const navContact = document.querySelector('.contact');
 // Set Initial State Of Menu
 let showMenu = false;
 
-navAbout.addEventListener('click', toggleMenu);
+//navAbout.addEventListener('click', toggleMenu);
+document.addEventListener('DOMContentLoaded', toggleMenu);
 
 menuBtn.addEventListener('click', toggleMenu);
 

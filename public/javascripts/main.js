@@ -11,7 +11,8 @@ const navItems = document.querySelectorAll('.nav-item');
 
 // Set Initial State Of Menu
 let showMenu = false;
-
+let URL=document.URL;
+console.log(URL);
 
 menuBtn.addEventListener('click', toggleMenu);
 

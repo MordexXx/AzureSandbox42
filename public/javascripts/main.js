@@ -23,7 +23,7 @@ setTimeout(function(){
     
     //Set Menu State
     showMenu = false;
-   }, 2000);
+   }, 500);
   /*
 document.addEventListener('DOMContentLoaded', function() {
   

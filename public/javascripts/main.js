@@ -12,13 +12,19 @@ const navPortfolio = document.querySelector('.portfolio');
 const navContact = document.querySelector('.contact');
 
 
-
+// Set the current page URL
+let URL = window.location.href;
 
 // Set Initial State Of Menu
 let showMenu = false;
 
-//navAbout.addEventListener('click', toggleMenu);
-document.addEventListener('DOMContentLoaded', toggleMenu);
+document.addEventListener('readystatechange', event => {
+
+    if (event.target.readyState === "complete" && URL.indexOf("about")>=0) {
+        console.log('Success');
+    }
+
+});
 
 menuBtn.addEventListener('click', toggleMenu);
 

@@ -10,11 +10,11 @@ const navItems = document.querySelectorAll('.nav-item');
 
 
 // Set Initial State Of Menu
-let URL=document.URL;
-console.log(URL);
 let showMenu = false;
 
 document.addEventListener('DOMContentLoaded', function() {
+    let URL=document.URL;
+    console.log(URL);
     if(URL == 'http://www.webdeveloper.fi/about') {
         showMenu = false;
         toggleMenu();

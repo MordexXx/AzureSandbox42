@@ -17,6 +17,7 @@ let showMenu = false;
 document.addEventListener('DOMContentLoaded', function() {
     if(URL == 'http://www.webdeveloper.fi/about') {
         showMenu = false;
+        toggleMenu();
     }
  }, false);
  

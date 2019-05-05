@@ -15,7 +15,7 @@ console.log(URL);
 let showMenu = false;
 
 
-menuNav.addEventListener('click', toggleMenu);
+document.addEventListener('DOMContentLoaded', toggleMenu);
 
 menuBtn.addEventListener('click', toggleMenu);
 

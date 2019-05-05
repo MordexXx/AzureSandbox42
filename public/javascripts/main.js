@@ -21,8 +21,8 @@ else {
     header1.classList.add('show');
     menu.classList.add('show');
     portrait.classList.add('show');
-    menuNav.classList.add('show');
-    menuBranding.classList.add('show');
+    menuNav.classList.add('shown');
+    menuBranding.classList.add('shown');
     navItems.forEach(item => item.classList.add('show'));
     showMenu = true;
 }

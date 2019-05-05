@@ -98,17 +98,9 @@
             background: $portrait-image;
             border-radius: 50%;
             border: solid 3px $secondary-color;
-            &.float {
-                float: left;
-                transform: translate3d(0,70%,0);
-            }
+
         }
-    .aboutcontent {
-        .p {
-        float: right;
-        padding: 4rem;
-        }
-    }
+
     }
     .nav-item {
         transform: translate3d(600px,0,0);

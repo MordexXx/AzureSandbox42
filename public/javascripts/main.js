@@ -29,7 +29,7 @@ else {
 */
 
 
-
+navItems.addEventListener('click',toggleMenu);
 
 
 menuBtn.addEventListener('click', toggleMenu);

@@ -31,7 +31,6 @@ else {
 document.addEventListener('readystatechange', event => {
 
     if (event.target.readyState === "complete" && URL.indexOf("about")>=0) {
-        console.log('Success');
         menuBtn.classList.remove('close');
         menuBtn.classList.add('blink');
         header1.classList.remove('show');
@@ -40,8 +39,35 @@ document.addEventListener('readystatechange', event => {
         menuNav.classList.remove('show');
         menuBranding.classList.remove('show');
         navItems.forEach(item => item.classList.remove('show'));
+        //Set Menu State
         showMenu = false;
-
+    }
+    else if (event.target.readyState === "complete" && URL.indexOf("portfolio")>=0) {
+        menuBtn.classList.remove('close');
+        menuBtn.classList.add('blink');
+        header1.classList.remove('show');
+        menu.classList.remove('show');
+        portrait.classList.remove('show');
+        menuNav.classList.remove('show');
+        menuBranding.classList.remove('show');
+        navItems.forEach(item => item.classList.remove('show'));
+        //Set Menu State
+        showMenu = false;
+    }
+    else if (event.target.readyState === "complete" && URL.indexOf("contact")>=0) {
+        menuBtn.classList.remove('close');
+        menuBtn.classList.add('blink');
+        header1.classList.remove('show');
+        menu.classList.remove('show');
+        portrait.classList.remove('show');
+        menuNav.classList.remove('show');
+        menuBranding.classList.remove('show');
+        navItems.forEach(item => item.classList.remove('show'));
+        //Set Menu State
+        showMenu = false;
+    }
+    else {
+        showMenu = false;
     }
 
 });

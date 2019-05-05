@@ -32,8 +32,16 @@ document.addEventListener('readystatechange', event => {
 
     if (event.target.readyState === "complete" && URL.indexOf("about")>=0) {
         console.log('Success');
+        menuBtn.classList.remove('close');
+        menuBtn.classList.add('blink');
+        header1.classList.remove('show');
+        menu.classList.remove('show');
+        portrait.classList.remove('show');
+        menuNav.classList.remove('show');
+        menuBranding.classList.remove('show');
+        navItems.forEach(item => item.classList.remove('show'));
         showMenu = false;
-        toggleMenu();
+
     }
 
 });

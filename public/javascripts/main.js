@@ -15,6 +15,16 @@ console.log(URL);
 let showMenu = false;
 
 if(URL == 'http://www.webdeveloper.fi/about') {
+    menuBtn.classList.remove('close');
+    menuBtn.classList.add('blink');
+    header1.classList.remove('show');
+    menu.classList.remove('show');
+    portrait.classList.remove('show');
+    menuNav.classList.remove('show');
+    menuBranding.classList.remove('show');
+    navItems.forEach(item => item.classList.remove('show'));
+    
+    //Set Menu State
     showMenu = false;
 }
 

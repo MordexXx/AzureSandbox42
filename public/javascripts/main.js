@@ -16,6 +16,14 @@ if(URL == 'http://www.webdeveloper.fi/') {
     console.log(URL);
 }
 else {
+    menuBtn.classList.add('close');
+    menuBtn.classList.remove('blink');
+    header1.classList.add('show');
+    menu.classList.add('show');
+    portrait.classList.add('show');
+    menuNav.classList.add('show');
+    menuBranding.classList.add('show');
+    navItems.forEach(item => item.classList.add('show'));
     showMenu = true;
 }
 

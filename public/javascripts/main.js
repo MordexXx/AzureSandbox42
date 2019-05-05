@@ -14,10 +14,12 @@ let URL=document.URL;
 console.log(URL);
 let showMenu = false;
 
-if(URL == 'http://www.webdeveloper.fi/about') {
-    showMenu = false;
-    document.addEventListener('DOMContentLoaded', toggleMenu);
-}
+document.addEventListener('DOMContentLoaded', function() {
+    if(URL == 'http://www.webdeveloper.fi/about') {
+        showMenu = false;
+    }
+ }, false);
+ 
 
 menuBtn.addEventListener('click', toggleMenu);
 

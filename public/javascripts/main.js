@@ -18,6 +18,16 @@ let URL = window.location.href;
 // Set Initial State Of Menu
 let showMenu = false;
 
+if(URL.indexOf('about')) {
+    showMenu = true;
+}
+else if(URL.indexOf('portfolio')) {
+    showMenu = true;
+}
+else {
+    showmenu = false;
+}
+
 document.addEventListener('readystatechange', event => {
 
     if (event.target.readyState === "complete" && URL.indexOf("about")>=0) {

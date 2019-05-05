@@ -20,8 +20,10 @@ let showMenu = false;
 
 document.addEventListener('readystatechange', event => {
 
-    if (event.target.readyState === "complete" && URL.indexOf("about")>=0) {
+    if (event.target.readyState === "complete" && URL.indexOf("about")>=0 && showMenu = true) {
         console.log('Success');
+        showMenu = false;
+        toggleMenu();
     }
 
 });

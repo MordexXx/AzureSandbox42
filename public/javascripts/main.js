@@ -15,8 +15,7 @@ console.log(URL);
 let showMenu = false;
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    if(URL == 'http://www.webdeveloper.fi/about') {
+navItems.addEventListener('click', function() {
     menuBtn.classList.remove('close');
     menuBtn.classList.add('blink');
     header1.classList.remove('show');
@@ -28,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     //Set Menu State
     showMenu = false;
-    }
 }, false);
 
 

@@ -10,26 +10,7 @@ const navItems = document.querySelectorAll('.nav-item');
 
 
 // Set Initial State Of Menu
-let URL=document.URL;
 let showMenu = false;
-/* if(URL == 'http://www.webdeveloper.fi/') {
-    console.log(URL);
-}
-else {
-    menuBtn.classList.add('close');
-    menuBtn.classList.remove('blink');
-    header1.classList.add('show');
-    menu.classList.add('show');
-    portrait.classList.add('show');
-    menuNav.classList.add('shown');
-    menuBranding.classList.add('shown');
-    navItems.forEach(item => item.classList.add('show'));
-    showMenu = true;
-}
-*/
-
-
-navItems.addEventListener('click',toggleMenu);
 
 
 menuBtn.addEventListener('click', toggleMenu);

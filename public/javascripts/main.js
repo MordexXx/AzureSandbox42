@@ -11,11 +11,15 @@ const navItems = document.querySelectorAll('.nav-item');
 
 // Set Initial State Of Menu
 let URL=document.URL;
+let showMenu = false;
 if(URL == 'http://www.webdeveloper.fi/') {
     console.log(URL);
 }
+else {
+    showMenu = true;
+}
 
-let showMenu = false;
+
 
 
 

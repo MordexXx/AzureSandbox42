@@ -73,6 +73,18 @@ main {
             */
         }
     }
+    &#about {
+        overflow: hidden;
+        h1 {
+            margin-top: 3vh;
+            /*
+            &.show {
+                margin-top: 7vh;
+
+            }
+            */
+        }
+    }
 }
 
 

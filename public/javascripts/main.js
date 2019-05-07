@@ -34,7 +34,7 @@ document.addEventListener('readystatechange', event => {
 
     if (event.target.readyState === "complete") {
         menuBtn.classList.remove('close');
-        menuBtn.classList.add('blink');
+        menuBtn.classList.add('heartBeat');
         header1.classList.remove('show');
         menu.classList.remove('show');
         portrait.classList.remove('show');
@@ -52,7 +52,7 @@ menuBtn.addEventListener('click', toggleMenu);
 function toggleMenu() {
     if(!showMenu) {
         menuBtn.classList.add('close');
-        menuBtn.classList.remove('blink');
+        menuBtn.classList.remove('heartBeat');
         header1.classList.add('show');
         menu.classList.add('show');
         portrait.classList.add('show');
@@ -66,7 +66,7 @@ function toggleMenu() {
     }
     else {
         menuBtn.classList.remove('close');
-        menuBtn.classList.add('blink');
+        menuBtn.classList.add('heartBeat');
         header1.classList.remove('show');
         menu.classList.remove('show');
         portrait.classList.remove('show');

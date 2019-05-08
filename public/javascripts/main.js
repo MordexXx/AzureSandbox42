@@ -19,7 +19,9 @@ let URL = window.location.href;
 let showMenu = false;
 
 document.addEventListener('readystatechange', event => {
+    eventType= performance.navigation.type;
     if (performance.navigation.type == 1) {
+        console.log('This was even type 1');
         if (event.target.readyState === "complete") {
             menuBtn.classList.remove('close');
             menuBtn.classList.add('blink');
@@ -32,6 +34,9 @@ document.addEventListener('readystatechange', event => {
             //Set Menu State
             showMenu = false;
         }
+    }
+    else{
+        console.log(eventType);
     }
 });
 

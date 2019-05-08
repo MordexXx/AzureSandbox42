@@ -23,13 +23,21 @@ let navType = performance.navigation.type;
 
 document.addEventListener('readystatechange', event => {
 
-    if (navType != 1) {
+    if (navType == 1) {
+
+        console.log(navType);
+        menuBranding.classList.add('hide');
+        menuNav.classList.add('hide'); 
+
+    }
+    else {
 
         console.log(navType);
         menuBranding.classList.remove('hide');
         menuNav.classList.remove('hide'); 
 
     }
+
     if (event.target.readyState === 'complete') {
         
         setTimeout(function(){

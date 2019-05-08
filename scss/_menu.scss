@@ -73,12 +73,8 @@
         transform: translate3d(100%,0,0);
         @include easeOut;
 
-        &.hide {
-            visibility: hidden;
-        }  
         &.show {
             transform: translate3d(0,0,0);
-            @include easeOut;
         }
     }
 
@@ -90,13 +86,9 @@
         border-color: $secondary-color;
         transform: translate3d(0,100%,0);
         @include easeOut;
-
-        &.hide {
-            visibility: hidden;
-        }        
+   
         &.show {
             transform: translate3d(0,0,0);
-            @include easeOut;
         }
 
         .portrait {

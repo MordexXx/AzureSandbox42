@@ -17,44 +17,21 @@ let URL = window.location.href;
 
 // Set Initial State Of Menu
 let showMenu = false;
-let navType = performance.navigation.type;
-
 
 
 document.addEventListener('readystatechange', event => {
 
-    if (navType == 1) {
-
-        console.log(navType);
-        menuBranding.classList.add('hide');
-        menuNav.classList.add('hide'); 
-
-    }
-    else {
-
-        console.log(navType);
-        menuBranding.classList.remove('hide');
-        menuNav.classList.remove('hide'); 
-
-    }
-
     if (event.target.readyState === 'complete') {
-        
-        setTimeout(function(){
-
-            menuBtn.classList.remove('close');
-            menuBtn.classList.add('blink');
-            header1.classList.remove('show');
-            menu.classList.remove('show');
-            portrait.classList.remove('show');
-            menuNav.classList.remove('show');
-            menuBranding.classList.remove('show');
-            navItems.forEach(item => item.classList.remove('show'));
-            //Set Menu State
-            showMenu = false;
-
-        }, 300); 
-
+        menuBtn.classList.remove('close');
+        menuBtn.classList.add('blink');
+        header1.classList.remove('show');
+        portrait.classList.remove('show');
+        menu.classList.remove('show');
+        menuNav.classList.remove('show');
+        menuBranding.classList.remove('show');
+        navItems.forEach(item => item.classList.remove('show'));
+        //Set Menu State
+        showMenu = false
     }
 });
 
@@ -63,14 +40,11 @@ menuBtn.addEventListener('click', toggleMenu);
 function toggleMenu() {
 
     if(!showMenu) {
-
-        menuBranding.classList.remove('hide');
-        menuNav.classList.remove('hide'); 
+        menu.classList.add('show');
         menuBtn.classList.add('close');
         menuBtn.classList.remove('blink');
         menuBtn.classList.remove('heartBeat');
         header1.classList.add('show');
-        menu.classList.add('show');
         portrait.classList.add('show');
         menuNav.classList.add('show');
         menuBranding.classList.add('show');
@@ -81,8 +55,6 @@ function toggleMenu() {
     }
     else {
 
-        menuBranding.classList.remove('hide');
-        menuNav.classList.remove('hide'); 
         menuBtn.classList.remove('close');
         menuBtn.classList.add('blink');
         header1.classList.remove('show');

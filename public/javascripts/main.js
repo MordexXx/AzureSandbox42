@@ -20,9 +20,10 @@ let showMenu = false;
 
 document.addEventListener('readystatechange', event => {
     eventType= performance.navigation.type;
-    if (performance.navigation.type == 1) {
-        console.log('This was even type 1');
-        if (event.target.readyState === "complete") {
+    
+    if (event.target.readyState === "complete") {
+        //Check is the user clicked a link or refreshed the page
+        if (performance.navigation.type == 1) {
             menuBtn.classList.remove('close');
             menuBtn.classList.add('blink');
             header1.classList.remove('show');
@@ -34,9 +35,22 @@ document.addEventListener('readystatechange', event => {
             //Set Menu State
             showMenu = false;
         }
-    }
-    else{
-        console.log(eventType);
+        /*
+        else {
+            menuBtn.classList.add('close');
+            menuBtn.classList.remove('blink');
+            menuBtn.classList.remove('heartBeat');
+            header1.classList.add('show');
+            menu.classList.add('show');
+            portrait.classList.add('show');
+            menuNav.classList.add('show');
+            menuBranding.classList.add('show');
+            menuBranding.classList.remove('hide');
+            navItems.forEach(item => item.classList.add('show'));  
+            //Set Menu State
+            showMenu = true;
+        }
+        */
     }
 });
 

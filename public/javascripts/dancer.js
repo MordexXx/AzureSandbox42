@@ -69,6 +69,7 @@ function logKey(e) {
     }
     else {
         GCD=true;
+        showButtonBorder(skill.keybind,'hide');
         setTimeout(function() {
             for (var i = 0; i < GCDButtons.length; i++) {
                 GCDButtons[i].classList.remove('GCD');

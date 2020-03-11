@@ -18,42 +18,43 @@ let URL = window.location.href;
 // Set Initial State Of Menu
 let showMenu = false;
 
+
 document.addEventListener('readystatechange', event => {
 
-    if (event.target.readyState === "complete") {
+    if (event.target.readyState === 'complete') {
         menuBtn.classList.remove('close');
         menuBtn.classList.add('blink');
         header1.classList.remove('show');
-        menu.classList.remove('show');
         portrait.classList.remove('show');
+        menu.classList.remove('show');
         menuNav.classList.remove('show');
         menuBranding.classList.remove('show');
         navItems.forEach(item => item.classList.remove('show'));
         //Set Menu State
-        showMenu = false;
+        showMenu = false
     }
-    
 });
 
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
+
     if(!showMenu) {
+        menu.classList.add('show');
         menuBtn.classList.add('close');
         menuBtn.classList.remove('blink');
         menuBtn.classList.remove('heartBeat');
         header1.classList.add('show');
-        menu.classList.add('show');
         portrait.classList.add('show');
         menuNav.classList.add('show');
         menuBranding.classList.add('show');
-        menuBranding.classList.remove('hide');
         navItems.forEach(item => item.classList.add('show'));
     
         //Set Menu State
         showMenu = true;
     }
     else {
+
         menuBtn.classList.remove('close');
         menuBtn.classList.add('blink');
         header1.classList.remove('show');
@@ -65,5 +66,6 @@ function toggleMenu() {
         
         //Set Menu State
         showMenu = false;
+
     }
 }

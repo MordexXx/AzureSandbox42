@@ -17,7 +17,7 @@ var target = {name: 'Tataru', Health: 100};
 //Cascade
 var skills = 
 [{id: 1, name:'Cascade', keybind: '1', potency: 250, comboPotency: 0, onGCD: true, recast: 2500, instant: false, comboSkill: 'Fountain', comboActive: false, canProc:true, procOnly: false, procced: false, procName: 'Reverse Cascade', procChance: 50},
- {id: 2, name:'Fountain', keybind: '2', potency: 100, comboPotency: 200, onGCD: true, recast: 2500, instant: false, comboSkill: null, comboActive: false, canProc:true, procOnly: false, procced: false, procName: 'Foutainfall', procChance: 50},
+ {id: 2, name:'Fountain', keybind: '2', potency: 100, comboPotency: 200, onGCD: true, recast: 2500, instant: false, comboSkill: null, comboActive: false, canProc:true, procOnly: false, procced: false, procName: 'Fountainfall', procChance: 50},
  {id: 3, name:'Reverse Cascade', keybind: '3', potency: 350, comboPotency: 0,onGCD: true, recast: 2500, instant: false, comboSkill: null, comboActive: false, canProc: true, procOnly: true, procced: false, procName: 'Fan Dance', procChance: 50},
  {id: 4, name:'Foutainfall', keybind: '4', potency: 400, comboPotency: 0,onGCD: true, recast: 2500, instant: false, comboSkill: null, comboActive: false, canProc: true, procOnly: true, procced: false, procName: 'Fan Dance', procChance: 50},
  {id: 5, name:'Fan Dance', keybind: 'e', potency: 150, comboPotency: 0,onGCD: false, recast: 2500, instant: true, comboSkill: null, comboActive: false, canProc: true, procOnly: true,  procced: false, procName: 'Fan Dance', procChance: 50}];

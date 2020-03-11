@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -142,6 +143,296 @@
   70% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #333;
+  background-image: url(https://i.postimg.cc/Hxs31SgW/sbbg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  line-height: 1.5; }
+
+.dancer {
+  opacity: 0.7;
+  z-index: -1;
+  position: fixed;
+  top: 150px;
+  left: 0px;
+  width: 100%;
+  height: auto; }
+
+.dancer2 {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  opacity: 0.7;
+  z-index: -1;
+  position: fixed;
+  top: 150px;
+  left: 0px;
+  width: 100%;
+  height: auto; }
+
+h1 {
+  padding: 0;
+  margin: 0;
+  opacity: 0.9;
+  font-size: 50px;
+  -webkit-text-stroke: 1px #4d4d4d;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(330deg, #494949 0%, #292f4b 25%, #b6c0df 50%, #000000 75%, #838383 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+#message {
+  width: 500px;
+  opacity: 0.9;
+  background-image: url(https://i.postimg.cc/mgYSzxZ2/tataru.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  overflow: hidden;
+  background-color: #222;
+  resize: none;
+  white-space: pre;
+  font-size: 16px;
+  font-weight: bold;
+  color: #c92626; }
+
+input, textarea {
+  opacity: 1;
+  font-family: "Helvetica Neue", Helvetica, sans-serif; }
+
+#health {
+  opacity: 0.8;
+  margin: auto;
+  width: 50%;
+  background: black;
+  border-radius: 8px;
+  height: 30px;
+  width: 500px;
+  padding: 2px; }
+
+.healthbar {
+  content: '';
+  display: block;
+  background: #640000;
+  background: linear-gradient(0deg, rgba(100, 0, 0, 0.8) 0%, rgba(255, 73, 73, 0.8) 50%, rgba(100, 0, 0, 0.8) 100%);
+  height: 26px;
+  width: 100%;
+  transition: width .5s ease-out;
+  border-radius: 8px; }
+
+.hit {
+  -webkit-animation: shake 0.5;
+  animation: shake 0.5s; }
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
+    background-color: red;
+    background-image: url("https://i.postimg.cc/g2FD2cWT/tatarurip.png"); }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
+    background-image: url("https://i.postimg.cc/mgYSzxZ2/tataru.png"); }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
+    background-color: #222; } }
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
+    background-color: red;
+    background-image: url("https://i.postimg.cc/g2FD2cWT/tatarurip.png"); }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
+    background-image: url("https://i.postimg.cc/mgYSzxZ2/tataru.png"); }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
+    background-color: #222; } }
+
+.dancer_button {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  height: 58px;
+  width: 58px;
+  border-radius: 5px;
+  text-align: center; }
+  .dancer_button .label {
+    opacity: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 5px;
+    top: -3px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+    text-shadow: 2px 2px #000000;
+    z-index: 2; }
+
+.red_button {
+  z-index: -1;
+  background-color: darkred;
+  background-image: url("https://i.postimg.cc/dQf6gmSv/emboite.png"); }
+  .red_button.GCD {
+    opacity: 0.8;
+    display: inline-block;
+    height: 58px;
+    width: 58px; }
+
+.green_button {
+  background-color: green;
+  background-image: url("https://i.postimg.cc/QCFbHHCR/jete.png"); }
+  .green_button.GCD {
+    opacity: 0.8;
+    display: inline-block;
+    height: 58px;
+    width: 58px; }
+
+.blue_button {
+  background-color: blue;
+  background-image: url("https://i.postimg.cc/KvgfbkdT/entrechat.png"); }
+  .blue_button.GCD {
+    opacity: 0.8;
+    display: inline-block;
+    height: 58px;
+    width: 58px; }
+
+.yellow_button {
+  background-color: darkgoldenrod;
+  background-image: url("https://i.postimg.cc/j5gcxzxH/pirouette.png"); }
+  .yellow_button.GCD {
+    opacity: 0.8;
+    display: inline-block;
+    height: 58px;
+    width: 58px; }
+
+.finish_button {
+  background-color: palevioletred;
+  background-image: url("https://i.postimg.cc/Wzx7rTJt/tfinish.png"); }
+  .finish_button.GCD {
+    opacity: 0.8;
+    display: inline-block;
+    height: 58px;
+    width: 58px; }
+
+.rotating-dashed {
+  opacity: 1;
+  z-index: 3;
+  display: inline-block;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  overflow: hidden;
+  color: orange; }
+
+.rotating-dashed .dashing {
+  opacity: 1;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.rotating-dashed .dashing:nth-of-type(1) {
+  -webkit-transform: rotate(0deg); }
+
+.rotating-dashed .dashing:nth-of-type(2) {
+  -webkit-transform: rotate(90deg); }
+
+.rotating-dashed .dashing:nth-of-type(3) {
+  -webkit-transform: rotate(180deg); }
+
+.rotating-dashed .dashing:nth-of-type(4) {
+  -webkit-transform: rotate(270deg); }
+
+.rotating-dashed .dashing i {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  border-bottom: 3px dashed; }
+
+.rotating-dashed .dashing i {
+  -webkit-animation: slideDash 2.5s infinite linear; }
+
+@-webkit-keyframes slideDash {
+  from {
+    -webkit-transform: translateX(-50%); }
+  to {
+    -webkit-transform: translateX(0%); } }
+
+.visible {
+  visibility: visible; }
+
+.hidden {
+  visibility: hidden; }
 
 * {
   box-sizing: border-box; }

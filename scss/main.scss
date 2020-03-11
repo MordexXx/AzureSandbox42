@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-
+@import 'dancer';
 
 * {
     box-sizing: border-box;
@@ -86,8 +86,5 @@ main {
         }
     }
 }
-
-
-
 
 @import 'mobile';

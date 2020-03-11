@@ -60,6 +60,7 @@
         height: 100vh;
         overflow: hidden;
     }
+    
     //Menu items/Right side
     &-nav {
         margin: 0;
@@ -85,7 +86,7 @@
         border-color: $secondary-color;
         transform: translate3d(0,100%,0);
         @include easeOut;
-
+   
         &.show {
             transform: translate3d(0,0,0);
         }
@@ -151,6 +152,7 @@
         opacity: 0.3;
     }
 }
+
 @-webkit-keyframes heartBeat {
     0% {
       -webkit-transform: scale(1);
@@ -170,6 +172,7 @@
     42% {
       -webkit-transform: scale(1.3);
       transform: scale(1.3);
+      opacity: 0.3;
     }
   
     70% {
@@ -197,6 +200,7 @@
     42% {
       -webkit-transform: scale(1.3);
       transform: scale(1.3);
+      opacity: 0.3;
     }
   
     70% {

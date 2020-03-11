@@ -25,8 +25,7 @@ var skill = null;
 var proccedSkill = null;
 var comboSkill = null;
 var comboSkillName = null;
-
- var reverseCascadeProc = false;
+var reverseCascadeProc = false;
 //Reverse Cascade
 
 
